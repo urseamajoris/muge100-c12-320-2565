@@ -1,4 +1,3 @@
-from Gsheets import parse_dict
 import tweepy
 import twt_kets as keys
 
@@ -15,6 +14,6 @@ def tweet(api: tweepy.API, message: str, image_path = None):
 
     print('tweeted successfully')
 
-def post_twt():
+def post_twt(msg):
     api = api()
-    tweet(api, parse_dict())
+    tweet(api, msg)
